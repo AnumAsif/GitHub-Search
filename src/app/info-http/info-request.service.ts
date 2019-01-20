@@ -48,12 +48,12 @@ export class InfoRequestService {
         for(let i=0;i<response["length"];i++){
           let newRepo= new Repository(0,"","","",0,"");
           newRepo.repoId = i+1;
-        newRepo.repoName = response[i].name;
-        newRepo.description = response[i].description;
-        newRepo.language = response[i].language;
-        newRepo.forks = response[i].forks;
-        newRepo.url = response[i].html_url;
-        this.repos.push(newRepo);
+          newRepo.repoName = response[i].name;
+          newRepo.description = response[i].description;
+          newRepo.language = response[i].language;
+          newRepo.forks = response[i].forks;
+          newRepo.url = response[i].html_url;
+          this.repos.push(newRepo);
         }
         resolve();
       },error=>{
