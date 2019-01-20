@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl:"https://api.github.com/users/daneden?access_token=56bd1895b2e987e016d5ec4a6edd9bd2d7addfda, https://api.github.com/users/anumasif/repos?access_token=56bd1895b2e987e016d5ec4a6edd9bd2d7addfda"
+  apiUrl:"https://api.github.com/users/anumasif?access_token=56bd1895b2e987e016d5ec4a6edd9bd2d7addfda",
+  apiUrl2:"https://api.github.com/users/anumasif/repos?access_token=56bd1895b2e987e016d5ec4a6edd9bd2d7addfda"
 };
 
 /*
