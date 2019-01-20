@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { UserComponent } from './user/user.component';
+import { NgProgressModule} from '@ngx-progressbar/core';
+import { NgProgressHttpModule} from '@ngx-progressbar/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyprofileComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgProgressModule,
+    NgProgressHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
