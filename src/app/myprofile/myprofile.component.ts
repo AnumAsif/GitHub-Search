@@ -24,10 +24,10 @@ export class MyprofileComponent implements OnInit {
   }
   ngOnInit() {
     // get request1.....................................
-    this.infoService.infoRequest();
+    this.infoService.infoRequest("anumasif");
     this.user=this.infoService.user;
     //get request2.......................................
-    this.infoService.repoRequest();
+    this.infoService.repoRequest("anumasif");
     this.repos=this.infoService.repos;
   }
 
