@@ -7,6 +7,9 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
 import { UserComponent } from './user/user.component';
 import { NgProgressModule} from '@ngx-progressbar/core';
 import { NgProgressHttpModule} from '@ngx-progressbar/http';
+import { RoutingModule} from './routing/routing.module';
+import { FormsModule} from '@angular/forms';
+//Defining Routes
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { NgProgressHttpModule} from '@ngx-progressbar/http';
     AppRoutingModule,
     HttpClientModule,
     NgProgressModule,
-    NgProgressHttpModule
+    NgProgressHttpModule,
+    RoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
