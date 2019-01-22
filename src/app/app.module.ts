@@ -9,13 +9,19 @@ import { NgProgressModule} from '@ngx-progressbar/core';
 import { NgProgressHttpModule} from '@ngx-progressbar/http';
 import { RoutingModule} from './routing/routing.module';
 import { FormsModule} from '@angular/forms';
+import { RepositoryComponent } from './repository/repository.component';
+import { BoldDirective } from './bold.directive';
+import { DateOfCreationPipe } from './date-of-creation.pipe';
 //Defining Routes
 
 @NgModule({
   declarations: [
     AppComponent,
     MyprofileComponent,
-    UserComponent
+    UserComponent,
+    RepositoryComponent,
+    BoldDirective,
+    DateOfCreationPipe
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,8 @@ import { FormsModule} from '@angular/forms';
     NgProgressHttpModule,
     RoutingModule,
     FormsModule
-  ],
+  ],// background-color: white;
+// font-weight: bold;
   providers: [],
   bootstrap: [AppComponent]
 })
